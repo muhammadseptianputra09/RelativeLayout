@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emalview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/imagelogo"
+        android:background="@color/white"
+        android:hint="@string/tEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/passwordview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emalview"
+        android:hint="@string/tPassword"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/btnlogin"
+        android:textAlignment="center" />
+
+</RelativeLayout>
